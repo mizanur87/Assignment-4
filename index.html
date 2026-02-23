@@ -46,5 +46,73 @@
         </div>
       </div>
     </header>
+
+    <hr class="my-[30px] opacity-15" />
+
+    <main class="w-[80%] mx-auto">
+      <h1 class="text-[20px] font-semibold text-[#002C5C] mb-[24px]">
+        Available Jobs
+      </h1>
+      <div>
+        <button
+          id="all-filter-btn"
+          class="btn w-20 h-6 px-[12px] py-[15px] text-[12px] bg-blue-600 text-white"
+        >
+          All
+        </button>
+        <button
+          id="interview-filter-btn"
+          class="btn w-20 h-6 px-[12px] py-[15px] text-[12px]"
+        >
+          Interview
+        </button>
+        <button
+          id="rejected-filter-btn"
+          class="btn w-20 h-6 px-[12px] py-[15px] text-[12px]"
+        >
+          Rejected
+        </button>
+      </div>
+
+      <section id="all-cards w-[80px] mx-auto ">
+        <!-- card 1 -->
+        <div
+          class="card mt-[16px] flex justify-between flex-row p-5 bg-white border border-gray-200"
+        >
+          <div class="textPart space-y-[20px]">
+            <div class="text1-2">
+              <h2 class="text-[18px] font-semibold text-[#002C5C]">
+                Mobile First Corp
+              </h2>
+              <p class="text-[16px] text-gray-400">React Native Developer</p>
+            </div>
+            <div class="text3">
+              <p class="text-gray-400 text-[14px]">
+                <span>Remote</span> • <span>Full-time</span> •
+                <span>$130,000</span> - <span>$175,000</span>
+              </p>
+            </div>
+            <div class="text4">
+              <button class="btn bg-[#EEF4FF] text-[#002C5C]">
+                NOT APPLIED
+              </button>
+              <p class="text-gray-900">
+                Build cross-platform mobile applications using React Native.
+                Work on products used by millions of users worldwide.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-outline btn-success">Success</button>
+              <button class="btn btn-outline btn-error">Error</button>
+            </div>
+          </div>
+          <div class="dltPart">
+            <div class="h-10 w-10 border-black-900 rounded-full btn">
+              <i class="fa-regular fa-trash-can" style="color: #64748b"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
