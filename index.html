@@ -50,9 +50,13 @@
     <hr class="my-[30px] opacity-15" />
 
     <main class="w-[80%] mx-auto">
-      <h1 class="text-[20px] font-semibold text-[#002C5C] mb-[24px]">
-        Available Jobs
-      </h1>
+      <div class="flex justify-between px-2">
+        <h1 class="text-[20px] font-semibold text-[#002C5C] mb-[24px]">
+          Available Jobs
+        </h1>
+        <p id="side-count" class="font-bold"></p>
+      </div>
+
       <div>
         <button
           onclick="toggleStyle('all_filter_btn')"
@@ -77,6 +81,11 @@
         </button>
       </div>
 
+      <!-- interview filtered cards -->
+      <section id="int_filtered" class="hidden"></section>
+      <!-- interview Rejected cards -->
+      <section id="rej_filtered" class="hidden"></section>
+
       <section id="allCards">
         <!-- card 1 -->
         <div
@@ -84,33 +93,39 @@
         >
           <div class="textPart space-y-[20px]">
             <div class="text1-2">
-              <h2 class="text-[18px] font-semibold text-[#002C5C]">
+              <h2 class="companyName text-[18px] font-semibold text-[#002C5C]">
                 Mobile First Corp
               </h2>
-              <p class="text-[16px] text-gray-400">React Native Developer</p>
+              <p class="job_Desc text-[16px] text-gray-400">
+                React Native Developer
+              </p>
             </div>
             <div class="text3">
-              <p class="text-gray-400 text-[14px]">
-                <span>Remote</span> • <span>Full-time</span> •
-                <span>$130,000</span> - <span>$175,000</span>
+              <p class="salary_Range text-gray-400 text-[14px]">
+                Remote • Full-time • $130,000 - $175,000
               </p>
             </div>
             <div class="text4">
-              <button class="btn bg-[#EEF4FF] text-[#002C5C]">
+              <p class="stat w-fit btn bg-[#EEF4FF] text-[#002C5C]">
                 NOT APPLIED
-              </button>
-              <p class="text-gray-900">
+              </p>
+
+              <p class="job_responsibility text-gray-900">
                 Build cross-platform mobile applications using React Native.
                 Work on products used by millions of users worldwide.
               </p>
             </div>
             <div>
-              <button class="btn btn-outline btn-success">INTERVIEW</button>
-              <button class="btn btn-outline btn-error">REJECTED</button>
+              <button class="succBtn btn btn-outline btn-success">
+                INTERVIEW
+              </button>
+              <button class="rejec_btn btn btn-outline btn-error">
+                REJECTED
+              </button>
             </div>
           </div>
           <div class="dltPart">
-            <div class="h-10 w-10 border-black-900 rounded-full btn">
+            <div class="dlt_btn h-10 w-10 border-black-900 rounded-full btn">
               <i class="fa-regular fa-trash-can" style="color: #64748b"></i>
             </div>
           </div>
@@ -122,33 +137,39 @@
         >
           <div class="textPart space-y-[20px]">
             <div class="text1-2">
-              <h2 class="text-[18px] font-semibold text-[#002C5C]">
-                Mobile First Corp
+              <h2 class="companyName text-[18px] font-semibold text-[#002C5C]">
+                Infosys
               </h2>
-              <p class="text-[16px] text-gray-400">React Native Developer</p>
+              <p class="job_Desc text-[16px] text-gray-400">
+                React Native Developer
+              </p>
             </div>
             <div class="text3">
-              <p class="text-gray-400 text-[14px]">
-                <span>Remote</span> • <span>Full-time</span> •
-                <span>$130,000</span> - <span>$175,000</span>
+              <p class="salary_Range text-gray-400 text-[14px]">
+                Remote • Full-time • $130,000 - $175,000
               </p>
             </div>
             <div class="text4">
-              <button class="btn bg-[#EEF4FF] text-[#002C5C]">
+              <p class="stat w-fit btn bg-[#EEF4FF] text-[#002C5C]">
                 NOT APPLIED
-              </button>
-              <p class="text-gray-900">
+              </p>
+
+              <p class="job_responsibility text-gray-900">
                 Build cross-platform mobile applications using React Native.
                 Work on products used by millions of users worldwide.
               </p>
             </div>
             <div>
-              <button class="btn btn-outline btn-success">INTERVIEW</button>
-              <button class="btn btn-outline btn-error">REJECTED</button>
+              <button class="succBtn btn btn-outline btn-success">
+                INTERVIEW
+              </button>
+              <button class="rejec_btn btn btn-outline btn-error">
+                REJECTED
+              </button>
             </div>
           </div>
           <div class="dltPart">
-            <div class="h-10 w-10 border-black-900 rounded-full btn">
+            <div class="dlt_btn h-10 w-10 border-black-900 rounded-full btn">
               <i class="fa-regular fa-trash-can" style="color: #64748b"></i>
             </div>
           </div>
@@ -160,33 +181,39 @@
         >
           <div class="textPart space-y-[20px]">
             <div class="text1-2">
-              <h2 class="text-[18px] font-semibold text-[#002C5C]">
-                Mobile First Corp
+              <h2 class="companyName text-[18px] font-semibold text-[#002C5C]">
+                Apple Inc
               </h2>
-              <p class="text-[16px] text-gray-400">React Native Developer</p>
+              <p class="job_Desc text-[16px] text-gray-400">
+                React Native Developer
+              </p>
             </div>
             <div class="text3">
-              <p class="text-gray-400 text-[14px]">
-                <span>Remote</span> • <span>Full-time</span> •
-                <span>$130,000</span> - <span>$175,000</span>
+              <p class="salary_Range text-gray-400 text-[14px]">
+                Remote • Full-time • $130,000 - $175,000
               </p>
             </div>
             <div class="text4">
-              <button class="btn bg-[#EEF4FF] text-[#002C5C]">
+              <p class="stat w-fit btn bg-[#EEF4FF] text-[#002C5C]">
                 NOT APPLIED
-              </button>
-              <p class="text-gray-900">
+              </p>
+
+              <p class="job_responsibility text-gray-900">
                 Build cross-platform mobile applications using React Native.
                 Work on products used by millions of users worldwide.
               </p>
             </div>
             <div>
-              <button class="btn btn-outline btn-success">INTERVIEW</button>
-              <button class="btn btn-outline btn-error">REJECTED</button>
+              <button class="succBtn btn btn-outline btn-success">
+                INTERVIEW
+              </button>
+              <button class="rejec_btn btn btn-outline btn-error">
+                REJECTED
+              </button>
             </div>
           </div>
           <div class="dltPart">
-            <div class="h-10 w-10 border-black-900 rounded-full btn">
+            <div class="dlt_btn h-10 w-10 border-black-900 rounded-full btn">
               <i class="fa-regular fa-trash-can" style="color: #64748b"></i>
             </div>
           </div>
@@ -197,33 +224,39 @@
         >
           <div class="textPart space-y-[20px]">
             <div class="text1-2">
-              <h2 class="text-[18px] font-semibold text-[#002C5C]">
-                Mobile First Corp
+              <h2 class="companyName text-[18px] font-semibold text-[#002C5C]">
+                Robi Axiata
               </h2>
-              <p class="text-[16px] text-gray-400">React Native Developer</p>
+              <p class="job_Desc text-[16px] text-gray-400">
+                React Native Developer
+              </p>
             </div>
             <div class="text3">
-              <p class="text-gray-400 text-[14px]">
-                <span>Remote</span> • <span>Full-time</span> •
-                <span>$130,000</span> - <span>$175,000</span>
+              <p class="salary_Range text-gray-400 text-[14px]">
+                Remote • Full-time • $130,000 - $175,000
               </p>
             </div>
             <div class="text4">
-              <button class="btn bg-[#EEF4FF] text-[#002C5C]">
+              <p class="stat w-fit btn bg-[#EEF4FF] text-[#002C5C]">
                 NOT APPLIED
-              </button>
-              <p class="text-gray-900">
+              </p>
+
+              <p class="job_responsibility text-gray-900">
                 Build cross-platform mobile applications using React Native.
                 Work on products used by millions of users worldwide.
               </p>
             </div>
             <div>
-              <button class="btn btn-outline btn-success">INTERVIEW</button>
-              <button class="btn btn-outline btn-error">REJECTED</button>
+              <button class="succBtn btn btn-outline btn-success">
+                INTERVIEW
+              </button>
+              <button class="rejec_btn btn btn-outline btn-error">
+                REJECTED
+              </button>
             </div>
           </div>
           <div class="dltPart">
-            <div class="h-10 w-10 border-black-900 rounded-full btn">
+            <div class="dlt_btn h-10 w-10 border-black-900 rounded-full btn">
               <i class="fa-regular fa-trash-can" style="color: #64748b"></i>
             </div>
           </div>
