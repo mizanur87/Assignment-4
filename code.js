@@ -31,7 +31,7 @@ function availJobsCounts() {
 
 availJobsCounts();
 
-let totalJobs = 4;
+let totalJobs = 8;
 
 for (const dlt of all_buttons) {
   dlt.addEventListener("click", function (event) {
